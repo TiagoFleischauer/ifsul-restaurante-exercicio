@@ -29,7 +29,7 @@ public class RestauranteService {
     })
     @GetMapping
     public List<Restaurante> listarRestaurantes() {
-        return this.listarRestaurantes();
+        return restauranteRepository.findAll();
     }
 
     @Operation(summary = "Cria um restaurante")
